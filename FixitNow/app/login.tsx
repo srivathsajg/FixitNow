@@ -45,9 +45,9 @@ export default function LoginScreen() {
           <View style={styles.divider} />
         </View>
         
-        <TouchableOpacity style={styles.googleBtn}>
-          <Ionicons name="logo-google" size={20} color={Colors.text} style={{ marginRight: 12 }} />
-          <Text style={styles.googleBtnText}>Continue with Google</Text>
+        <TouchableOpacity style={styles.googleBtn} onPress={() => router.replace('/(worker-tabs)')}>
+          <Ionicons name="briefcase" size={20} color={Colors.text} style={{ marginRight: 12 }} />
+          <Text style={styles.googleBtnText}>Login as FixitNow Pro</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
