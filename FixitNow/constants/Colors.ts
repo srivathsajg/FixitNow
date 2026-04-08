@@ -1,0 +1,20 @@
+export default {
+  primary: '#1F51E5',
+  primaryLight: '#3D6FF6',
+  primaryDark: '#0D33A6',
+  secondary: '#FFB800',
+  secondaryLight: '#FFE399',
+  background: '#F8F9FA',
+  card: '#FFFFFF',
+  text: '#111827',
+  textSecondary: '#6B7280',
+  border: '#E5E7EB',
+  error: '#EF4444',
+  success: '#10B981',
+  warning: '#F59E0B',
+  info: '#3B82F6',
+  urgent: '#C2410C', // for urgent banners
+  urgentBg: '#FFEDD5',
+  black: '#000000',
+  white: '#FFFFFF',
+};
