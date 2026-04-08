@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#004ac6",
+                    "surface": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "secondary": "#735c00",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#ffe083",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-container": "#fed01b",
+                    "on-tertiary-container": "#ffede6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#bc4800",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-dim": "#d8dadc",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-surface": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary-container": "#eeefff",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed-dim": "#eec200",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#00174b",
+                    "outline": "#737686",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-surface-variant": "#434655",
+                    "outline-variant": "#c3c6d7",
+                    "tertiary": "#943700",
+                    "primary-container": "#2563eb",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-fixed": "#ffdbcd",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-tint": "#0053db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "xxl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col items-center justify-center selection:bg-primary-fixed selection:text-on-primary-fixed">
+<div class="max-w-md w-full min-h-screen bg-surface flex flex-col relative overflow-hidden">
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-6">
+<div class="text-xl font-black text-slate-900 tracking-tight">FixitNow</div>
+<button class="text-sm font-semibold text-outline hover:text-primary transition-colors">Skip</button>
+</header>
+<main class="flex-1 flex flex-col px-8 pt-24 pb-12 relative z-10">
+<div class="flex-1 flex flex-col justify-center items-center">
+<div class="relative w-full aspect-square mb-12">
+<div class="absolute inset-0 bg-primary-fixed/30 rounded-full blur-3xl scale-90"></div>
+<div class="relative w-full h-full bg-surface-container-lowest rounded-xxl shadow-sm overflow-hidden flex items-center justify-center p-4">
+<img alt="Professional home service technician" class="w-full h-full object-cover rounded-xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="A professional male electrician in a clean blue uniform smiling confidently, carrying high-end tools in a bright, modern minimalist living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsTvmzQgF-VyyJKTPSV7G9AD6m-mtIFD9VHukkOLeMy05vBg7HqGVt1FkMrR6NqY5ll6JNyeDf36u7ELZNinxUDdq5UIDdE9r84J360zrkLbAOiHNVmIXzTlGuGW7tmyiFQ6HUMBBqhUht-0EJxKVhIYy-EOVLXgSGkFaHbiZJKfYdKQwwaYXN8wuohubKngcvfcn-iI794aIwS-u6BNIg4c4OQAb6RHrj_D2oX4Mz3W2fJeWPXrbu3nCYFlI8NYpbjnwbaWGAimt-"/>
+<div class="absolute top-6 right-6 bg-secondary-container text-on-secondary-container px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-[10px] font-bold uppercase tracking-wider font-label">Verified Pro</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6 bg-white/80 backdrop-blur-md p-4 rounded-xl border border-white/40 shadow-xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">shield_person</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">Identity Secured</p>
+<p class="text-[10px] text-outline">Background Checked 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center space-y-4 max-w-xs">
+<h1 class="text-3xl font-extrabold tracking-tight text-on-surface leading-tight">
+                        Verified experts only
+                    </h1>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        Safe, reliable and transparent home services. Every pro is hand-picked and background checked.
+                    </p>
+</div>
+</div>
+<div class="mt-auto space-y-6">
+<div class="flex justify-center gap-2">
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+<div class="w-8 h-2 rounded-full bg-primary"></div>
+</div>
+<button class="w-full h-16 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xxl font-bold text-lg shadow-lg shadow-primary/20 flex items-center justify-center gap-3 group active:scale-95 transition-all">
+                    Get Started
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</main>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-fixed/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</body></html>

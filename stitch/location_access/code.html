@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FixitNow | Location Access</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#6f5900",
+                        "primary": "#004ac6",
+                        "surface": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "secondary": "#735c00",
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#ffe083",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-container": "#fed01b",
+                        "on-tertiary-container": "#ffede6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "tertiary-container": "#bc4800",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b4c5ff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-surface": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-container": "#eeefff",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#eec200",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00174b",
+                        "outline": "#737686",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed": "#231b00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-surface-variant": "#434655",
+                        "outline-variant": "#c3c6d7",
+                        "tertiary": "#943700",
+                        "primary-container": "#2563eb",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-fixed": "#ffdbcd",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-tint": "#0053db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased overflow-hidden h-screen w-full flex flex-col">
+<!-- TopAppBar Suppressed per Destination Rule (Transactional/Onboarding Flow) -->
+<main class="flex-grow flex flex-col items-center justify-center px-6 relative">
+<!-- Abstract Background Detail -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed opacity-20 blur-[100px] -z-10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-secondary-container opacity-10 blur-[120px] -z-10 rounded-full -translate-x-1/2 translate-y-1/2"></div>
+<!-- Hero Section / Asymmetric Image Card -->
+<div class="w-full max-w-md space-y-10 flex flex-col items-center">
+<!-- Map Visualization Card -->
+<div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-primary/10">
+<div class="absolute inset-0 bg-slate-200">
+<img class="w-full h-full object-cover" data-alt="Modern 3D isometric map illustration of a clean city neighborhood with blue route markers and soft daylight lighting" data-location="New York City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACJc3ZLRg_5J78RH3EPzkMBjs_Z2uix8srrber8qtLWsCeEOSCJls55EDNQ5ivkt7qi0fF0F08iDO9PuSSA-x0gH_Ls1X_uKM7c3sWtb1ldEcKsK1si3IcFOorMxahy2frpEAFFMcKVp0D0TDQw07_GUFw-mGQGtrjUHCmwm2BmtelNgOkizN5tdOnOHDhB64s24BDT2qxsTzWMDYzwmTGg9b_rolkBO1FXyVKpnKy74DlkRh4HooL54j-3zf0iD4few2WIZKBWgW6"/>
+</div>
+<!-- Glass Overlay Badge -->
+<div class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-2xl flex items-center gap-2 border border-white/50">
+<span class="material-symbols-outlined text-primary text-xl fill-icon">location_on</span>
+<span class="font-headline font-bold text-xs uppercase tracking-widest text-on-surface">Precision Tracking</span>
+</div>
+<!-- Center Ping Effect -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative">
+<div class="absolute inset-0 animate-ping rounded-full bg-primary/30 w-16 h-16 -m-4"></div>
+<div class="relative w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm fill-icon">my_location</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="text-center space-y-4">
+<h1 class="text-3xl font-headline font-extrabold tracking-tight text-on-surface">
+                    Enable location for <span class="text-primary">faster service</span>
+</h1>
+<p class="text-on-surface-variant leading-relaxed px-4">
+                    To connect you with the nearest top-rated pro in minutes, we need to know where the fix is needed.
+                </p>
+</div>
+<!-- Action Cluster -->
+<div class="w-full space-y-4 pt-4">
+<!-- Primary CTA -->
+<button class="w-full h-16 bg-gradient-to-r from-primary to-primary-container text-white rounded-3xl font-bold text-lg shadow-xl shadow-primary/20 flex items-center justify-center gap-3 active:scale-[0.98] transition-transform duration-150">
+<span class="material-symbols-outlined">near_me</span>
+                    Allow Location
+                </button>
+<!-- Secondary Option -->
+<button class="w-full h-16 bg-surface-container-low text-on-surface rounded-3xl font-semibold text-base flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors active:scale-[0.98]">
+<span class="material-symbols-outlined text-on-surface-variant">edit_location</span>
+                    Enter manually
+                </button>
+</div>
+<!-- Trust Badge -->
+<div class="bg-surface-container px-6 py-3 rounded-2xl flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">shield_lock</span>
+<p class="text-xs text-on-surface-variant font-medium">Your privacy is secure. We only access location when the app is in use.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Suppressed per Relevance Check (Task-Focused / Onboarding) -->
+</body></html>

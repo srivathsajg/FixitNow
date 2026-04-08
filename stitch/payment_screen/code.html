@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Secure Payment - FixitNow</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#6f5900",
+                        "primary": "#004ac6",
+                        "surface": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "secondary": "#735c00",
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#ffe083",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-container": "#fed01b",
+                        "on-tertiary-container": "#ffede6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "tertiary-container": "#bc4800",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b4c5ff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-surface": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-container": "#eeefff",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#eec200",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00174b",
+                        "outline": "#737686",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed": "#231b00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-surface-variant": "#434655",
+                        "outline-variant": "#c3c6d7",
+                        "tertiary": "#943700",
+                        "primary-container": "#2563eb",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-fixed": "#ffdbcd",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-tint": "#0053db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">arrow_back</span>
+</button>
+<span class="text-xl font-black text-slate-900 dark:text-white tracking-tight">FixitNow</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400">verified_user</span>
+<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a friendly professional man in a clean white shirt against a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH9kj_CyjVGDotg4QDk_LpwQkLFcwC6oq1ZuqFiaowStdtHc3nOm0nb2VbIoJiVtwIMadZbhS5OID9exGp0hPNWkQiokpAvNCjQfrzJQOW6E-Cwz3GT-xCWCPeN38wQ_lU_DbLt5Nv2vkjyD1DMKh4URdxeN_Q4jdcJEEK-FrEI1jQ4gh_6Jytk5F0bHn6jnOrhPTWf1rCLsHrHarjKUuqKYV1Oj6B9hxXkzllki_n-iMOLU4MY9tui8WdVAiqiAx2_lowolivoWIm"/>
+</div>
+</div>
+</header>
+<main class="max-w-xl mx-auto pt-24 px-6">
+<!-- Summary Section -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h1 class="text-2xl font-bold tracking-tight">Checkout</h1>
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Awaiting Payment</span>
+</div>
+<!-- Bento-style Summary Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-sm flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">plumbing</span>
+</div>
+<div class="flex-1">
+<h2 class="text-lg font-bold">Emergency Pipe Repair</h2>
+<p class="text-on-surface-variant text-sm">Scheduled for Today, 4:30 PM</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-sm text-secondary">star</span>
+<span class="text-xs font-semibold">4.9 • Super Pro</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-4 space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Service Base Fee</span>
+<span class="font-medium">$85.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Platform &amp; Safety Fee</span>
+<span class="font-medium">$4.50</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Emergency Surge</span>
+<span class="font-medium">$12.00</span>
+</div>
+<div class="h-px bg-outline-variant/20 pt-1"></div>
+<div class="flex justify-between items-center pt-1">
+<span class="font-bold text-base">Total Amount</span>
+<span class="text-2xl font-black text-primary">$101.50</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Payment Methods -->
+<section class="space-y-4">
+<h3 class="text-sm font-bold text-on-surface-variant uppercase tracking-widest pl-2">Select Payment Method</h3>
+<div class="grid gap-3">
+<!-- UPI Option -->
+<label class="group relative flex items-center p-4 bg-surface-container-lowest rounded-3xl cursor-pointer ring-2 ring-transparent transition-all hover:bg-slate-50">
+<input checked="" class="hidden peer" name="payment" type="radio"/>
+<div class="absolute inset-0 rounded-3xl ring-2 ring-primary opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-primary">account_balance</span>
+</div>
+<div class="flex-1">
+<p class="font-bold">UPI / Instant Transfer</p>
+<p class="text-xs text-on-surface-variant">Google Pay, PhonePe, Paytm</p>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+<!-- Card Option -->
+<label class="group relative flex items-center p-4 bg-surface-container-lowest rounded-3xl cursor-pointer ring-2 ring-transparent transition-all hover:bg-slate-50">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="absolute inset-0 rounded-3xl ring-2 ring-primary opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-primary">credit_card</span>
+</div>
+<div class="flex-1">
+<p class="font-bold">Credit / Debit Card</p>
+<p class="text-xs text-on-surface-variant">Ends in •••• 4242</p>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+<!-- Wallet Option -->
+<label class="group relative flex items-center p-4 bg-surface-container-lowest rounded-3xl cursor-pointer ring-2 ring-transparent transition-all hover:bg-slate-50">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="absolute inset-0 rounded-3xl ring-2 ring-primary opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+</div>
+<div class="flex-1 text-left">
+<p class="font-bold">Fixit Wallet</p>
+<p class="text-xs text-on-surface-variant">Balance: $42.00</p>
+</div>
+<span class="mr-4 text-xs font-bold text-secondary">ADD FUNDS</span>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+<!-- Cash Option -->
+<label class="group relative flex items-center p-4 bg-surface-container-lowest rounded-3xl cursor-pointer ring-2 ring-transparent transition-all hover:bg-slate-50">
+<input class="hidden peer" name="payment" type="radio"/>
+<div class="absolute inset-0 rounded-3xl ring-2 ring-primary opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"></div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center mr-4">
+<span class="material-symbols-outlined text-primary">payments</span>
+</div>
+<div class="flex-1">
+<p class="font-bold">Cash on Service</p>
+<p class="text-xs text-on-surface-variant">Pay after job completion</p>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Trust Indicator -->
+<div class="mt-8 flex items-center justify-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-xs font-medium uppercase tracking-widest">End-to-End Encrypted Payments</span>
+</div>
+</main>
+<!-- Bottom Action Bar (Fixed) -->
+<div class="fixed bottom-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl px-6 pt-4 pb-8 shadow-[0_-8px_30px_rgba(0,0,0,0.08)]">
+<div class="max-w-xl mx-auto flex items-center justify-between gap-6">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Grand Total</span>
+<span class="text-xl font-black text-slate-900 dark:text-white">$101.50</span>
+</div>
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-container text-white py-4 px-8 rounded-2xl font-bold text-base shadow-lg shadow-primary/20 active:scale-95 transition-transform duration-200 flex items-center justify-center gap-2">
+<span>Pay Now</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Hidden Bottom Nav Suppression: As this is a Transactional page, global nav is hidden per Shell Visibility rules -->
+</body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#004ac6",
+                    "surface": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "secondary": "#735c00",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#ffe083",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-container": "#fed01b",
+                    "on-tertiary-container": "#ffede6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#bc4800",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-dim": "#d8dadc",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-surface": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary-container": "#eeefff",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed-dim": "#eec200",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#00174b",
+                    "outline": "#737686",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-surface-variant": "#434655",
+                    "outline-variant": "#c3c6d7",
+                    "tertiary": "#943700",
+                    "primary-container": "#2563eb",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-fixed": "#ffdbcd",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-tint": "#0053db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar Component -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors active:scale-95 active:duration-150 cursor-pointer">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400">location_on</span>
+</div>
+<h1 class="text-xl font-black text-slate-900 dark:text-white tracking-tight">FixitNow</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/10">
+<img alt="user profile picture" class="w-full h-full object-cover" data-alt="close-up portrait of a professional man in a clean white studio setting, smiling warmly, soft high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNKY2T2OK1gCrC8RzeHe0MswrH5_CUy-k1J2jKwN5MMx_8kdto6G1UmhyFNUTwPH4DNKYVSZ2n0VuQJ2wabLpjqMH68OBsNNnkIA06yo4vQ8gQIEpdOjqALzhY9yLg7VjjaiQXCT2NZn3p5l9lNtOjUBJlxFSyhZ3eOaE1rBrpacKoYnk1FqM1jFUDbR5yKVcxdL41XkxEFG6sujbXKOLS7CW4adAMiHkXGs-Z1bNcCPOO_pBsqGY03rRNFWhoHjcvRYNvr4f6oLVu"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Section Header -->
+<div class="mb-8 flex items-end justify-between">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1 block">Activity Center</span>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Notifications</h2>
+</div>
+<button class="text-primary font-semibold text-sm hover:underline decoration-2 underline-offset-4">
+                Mark all as read
+            </button>
+</div>
+<!-- Notification Feed -->
+<div class="space-y-4">
+<!-- New Alert / Technician Assigned -->
+<div class="group relative bg-surface-container-lowest rounded-3xl p-5 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 active:scale-[0.98]">
+<div class="absolute top-5 right-5 h-2.5 w-2.5 bg-primary rounded-full"></div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">person_pin</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface text-lg">Technician Assigned</h3>
+<span class="text-xs font-medium text-outline">2m ago</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                            Expert plumber <span class="font-semibold text-on-surface">Marco Rossi</span> has been assigned to your request #FX-8821.
+                        </p>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-2xl">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="professional technician wearing a blue uniform smiling, looking trustworthy, blurred workshop background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQC4ZQvH0G19s9XntO2BdLHgdWTKMXI0XH-VTnTB5RGVEeuYW5zOR2HDJXYqdOf9sVKpxTHJuZWXAazW9Xh8bYWQyZyCXCgNOEn2WxKmlEoFIOO_zLIDJZ_1DmIn0gkTat3zriTMaf6nl1IOxSdQkg8wLkTsEm5r7BB9tJq_YFT57ZWhtafEfN2NPKz4HYP3lyuBalWrbX39paclxhGMToQGtwbfcH2gSUVTLzRHuUSd2UwHkwn_wokcbPy0JGeohjfEbWJhqw6pV9"/>
+<div class="flex-1">
+<p class="text-xs font-bold text-on-surface">Arrival: 2:30 PM - 3:00 PM</p>
+<p class="text-[10px] text-outline uppercase tracking-wide">Highly Rated • 4.9 ★</p>
+</div>
+<button class="px-4 py-1.5 bg-primary text-white rounded-full text-xs font-bold shadow-sm">Track</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Urgent Update / Booking Update -->
+<div class="group bg-surface-container-lowest rounded-3xl p-5 transition-all duration-300 border-l-4 border-tertiary-container shadow-sm">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-on-surface text-lg">Urgent Update</h3>
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold uppercase px-2 py-0.5 rounded-full tracking-wider">Priority</span>
+</div>
+<span class="text-xs font-medium text-outline">1h ago</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Your emergency AC repair scheduled for <span class="text-tertiary font-semibold">Today, 5:00 PM</span> requires immediate confirmation of the parking access.
+                        </p>
+<div class="mt-4 flex gap-2">
+<button class="flex-1 py-2.5 bg-surface-container-high text-on-surface rounded-2xl text-xs font-bold hover:bg-surface-variant transition-colors">Dismiss</button>
+<button class="flex-[2] py-2.5 bg-primary text-white rounded-2xl text-xs font-bold shadow-md shadow-primary/20">Confirm Now</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Offer Card -->
+<div class="group bg-surface-container-lowest rounded-3xl p-5 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/5 border border-outline-variant/10">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">redeem</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface text-lg">Special Offer Unlocked</h3>
+<span class="text-xs font-medium text-outline">Yesterday</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-3">
+                            Enjoy <span class="text-secondary font-bold">20% OFF</span> your next routine maintenance. Use code <span class="bg-secondary-fixed px-2 py-0.5 rounded font-mono font-bold text-on-secondary-fixed">SPRINGFIX24</span>
+</p>
+<div class="relative h-24 w-full rounded-2xl overflow-hidden mt-2">
+<img class="w-full h-full object-cover" data-alt="clean modern living room with pristine furniture and natural morning light, emphasizing home maintenance and freshness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUXrijr8nbEksnYW3fLX43NxuMIOllSFhGGU5PgGc4Jf083NcXkLsCNLF3wA2DXiypTqJGjbt8kOZbiZoIAKeVh2Homeji6egB_kv15c1Qin6m4tX1vZW5ajXnRBCAzbSFg1EV59ECGBOahjmVVi2GMg22gr1vTwc_qP4CTMbcJXnfbWr_fPRBGO2rkR7Po5u0lhY7UFWb_hK1fPGK9t63Z-alLu4rLBg27us7aKrIgei71Iv05roReNVZObcnozqrYOqdjL-24lnI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+<span class="text-white text-[10px] font-bold uppercase tracking-widest">Valid until April 30</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Success / Payment Received -->
+<div class="group bg-surface-container-lowest rounded-3xl p-5 transition-all duration-300 opacity-80 hover:opacity-100">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-emerald-600 text-3xl">check_circle</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-on-surface text-lg">Payment Successful</h3>
+<span class="text-xs font-medium text-outline">2 days ago</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Payment for service FX-7710 ($145.00) has been successfully processed. Receipt sent to your email.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More / History Anchor -->
+<div class="mt-10 mb-8 flex justify-center">
+<button class="flex items-center gap-2 px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-bold text-sm hover:bg-surface-container-high transition-all">
+                View Older Notifications
+                <span class="material-symbols-outlined text-lg">history</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar Component -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex justify-around items-center px-4 pb-2 rounded-t-3xl z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] bg-slate-50 dark:bg-slate-950">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 dark:hover:text-blue-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 dark:hover:text-blue-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">calendar_today</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 dark:hover:text-blue-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">my_location</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 dark:hover:text-blue-300 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1">account_balance_wallet</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Wallet</span>
+</a>
+<!-- "Home" or "Profile" could be active, but let's assume we are on the Notifications/Alerts which is often an extension of Profile or a dedicated top-level state. In the context of the requested JSON tabs, none match "Notifications" directly, so we remain neutral or default to Profile as the closest hub. -->
+<a class="flex flex-col items-center justify-center bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-2xl px-3 py-1.5 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FixitNow - Select Technician</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#004ac6",
+                    "surface": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "secondary": "#735c00",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#ffe083",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-container": "#fed01b",
+                    "on-tertiary-container": "#ffede6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#bc4800",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-dim": "#d8dadc",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-surface": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary-container": "#eeefff",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed-dim": "#eec200",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#00174b",
+                    "outline": "#737686",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-surface-variant": "#434655",
+                    "outline-variant": "#c3c6d7",
+                    "tertiary": "#943700",
+                    "primary-container": "#2563eb",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-fixed": "#ffdbcd",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-tint": "#0053db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600">location_on</span>
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Location</span>
+<span class="font-bold text-slate-900 tracking-tight">FixitNow</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-slate-100 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden ring-2 ring-white">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a young man with a warm smile in high-key studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS_LXe2nIFAwrfIO8LifngKljsEyDO33hO3ep4KS5i8rZBGRwGrFjDL7mKe3dEyKUUCluEF1TvCXPnOikjPBzDJQxoYXGXicUJAghBVHaVF4pHVP0v0nt0afQLAOPoW9aTyipC4WbOnPxQW-kVvWYyh6OlFdBd9aXyCjQrKdcmlT0_jSUlK4iyasmcMnAc0u85QiEw_vFgZSIl8xk1X_VTtTX7L_6_nF2wosh0WqWckboo-0e8JnDlFeV9zJw_5h9HN4Bpwz7Z_V3o"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Content Anchor: Service Type -->
+<div class="mb-8">
+<h1 class="text-3xl font-extrabold text-on-surface tracking-tight leading-tight">Available Electricians</h1>
+<p class="text-on-surface-variant mt-2 font-medium">Found 3 top-rated professionals nearby</p>
+</div>
+<!-- Technician List: Asymmetric Editorial Layout -->
+<div class="space-y-6">
+<!-- Best Match Card (Featured) -->
+<div class="relative group">
+<!-- Smart Tag -->
+<div class="absolute -top-3 left-6 z-10 bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+                    Best Match
+                </div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 transform active:scale-[0.98]">
+<div class="flex gap-5">
+<div class="relative">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover" data-alt="professional electrician in blue uniform smiling confidently in a workshop environment with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ7wcVd2euanEqDV5ZjZ2T1QPZu4b0iCqFkaFJE0-IZR7dmBW4qy3TTJeQd41aCGiGoMMJGkzsYjThFSyXhJePlm4gYZ1HW9Q1QARr5GTtxbK8AQxXGW5VqdYn16tH4hvh7AS2mBtEVgbLV5n1LhidPOwIcHBOJUgtTFD5BQHRM9rFoq-BCY5Cx7eSyokPRKXHTFE0o_h_RgCBbxCUDjwuY1c2FwlWRAerulU9OYAoeceIK1M0D7M4xkGJQi6fSQqzhCG1dMkrtb07"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-white rounded-full p-1 shadow-sm">
+<div class="bg-green-500 w-3 h-3 rounded-full border-2 border-white"></div>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold text-slate-900 tracking-tight">Marcus Rivera</h3>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">4.9</span>
+<span class="text-slate-400 text-sm font-medium">· 1.2k jobs done</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-primary font-bold text-lg">$45</div>
+<div class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Visit Fee</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-slate-50 pt-5">
+<div class="flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">ETA</span>
+<span class="font-bold text-slate-900">12 Mins</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Distance</span>
+<span class="font-bold text-slate-900">0.8 Miles</span>
+</div>
+</div>
+<button class="bg-primary hover:bg-primary-container text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg shadow-blue-500/20 active:scale-95">
+                            Book Now
+                        </button>
+</div>
+</div>
+</div>
+<!-- Fastest Option Card -->
+<div class="relative group">
+<div class="absolute -top-3 left-6 z-10 bg-tertiary-container text-on-tertiary-container px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    Fastest
+                </div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300">
+<div class="flex gap-5">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover" data-alt="experienced electrician holding a tool belt, looking friendly and professional, clean background with daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI3vmIYB6uU25IkQUDSx2kphfWKoo7KAG1k57yqbElmDqheW8uUdEm-CxnreQDIPpWUhjq-9Q-Z1QnZxAObYquTIZfTFKPWSrj-zRvq4AWuu3kwx1-M7jd5upOY5s2hOIXabxRUTlclofpq6R303fzokrvXhQBjxBkOejq3jZgUPikfLeL_ljzfy3SUDuoSuc6wHCHEFW4VgW9esbqi2NR7yjwobXGNEQ3fDPXbdJQIdGufjT0R98bxUPpNglMrIh-DxOknlag4Ep2"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold text-slate-900 tracking-tight">Sam Jenkins</h3>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">4.7</span>
+<span class="text-slate-400 text-sm font-medium">· 850 jobs done</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-primary font-bold text-lg">$38</div>
+<div class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Visit Fee</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-slate-50 pt-5">
+<div class="flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">ETA</span>
+<span class="font-bold text-tertiary">5 Mins</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Distance</span>
+<span class="font-bold text-slate-900">0.3 Miles</span>
+</div>
+</div>
+<button class="bg-surface-container-highest text-on-surface px-8 py-3 rounded-xl font-bold hover:bg-slate-200 transition-all active:scale-95">
+                            Book Now
+                        </button>
+</div>
+</div>
+</div>
+<!-- Standard Top Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300">
+<div class="flex gap-5">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover" data-alt="middle aged technician with glasses and professional work attire smiling against a blurred workshop background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvHkvLiOy901o5ud_KdXeyxaM3onQv0RHzbi8VfJn4ZRFWuyfwPmaj2cVCkZNckylwiAsbruyVYt3ncjuu7rBQkhL1vGg3isxfiUQXyXBlqz605tJawBnL6P_415u9cuZ5Cz2wrn5CKxYN5K1t0-n_hodkNFwoluQil1vfcpAAXkBVjv-2W2Hi5VyAfcxS-Cu8nzyn2n1YG6SDGYpI3HCffOuiP88GM7uM660J8nqloG-RmlnWvnmw7hxkJPG-bPlNbFwbuGW8JkgZ"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold text-slate-900 tracking-tight">David Chen</h3>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-sm">4.8</span>
+<span class="text-slate-400 text-sm font-medium">· 2.1k jobs done</span>
+</div>
+</div>
+<div class="text-right">
+<div class="text-primary font-bold text-lg">$50</div>
+<div class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Visit Fee</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-slate-50 pt-5">
+<div class="flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">ETA</span>
+<span class="font-bold text-slate-900">18 Mins</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Distance</span>
+<span class="font-bold text-slate-900">1.4 Miles</span>
+</div>
+</div>
+<button class="bg-surface-container-highest text-on-surface px-8 py-3 rounded-xl font-bold hover:bg-slate-200 transition-all active:scale-95">
+                        Book Now
+                    </button>
+</div>
+</div>
+</div>
+<!-- Safety Banner (Digital Concierge Trust Builder) -->
+<div class="mt-12 bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-6 flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-blue-600">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-blue-900">FixitNow Verified</h4>
+<p class="text-sm text-blue-800/70 mt-1">All technicians undergo multi-step background checks and safety training for your peace of mind.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-white/80 backdrop-blur-md flex justify-around items-center px-4 pb-2 z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:hidden">
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-50 text-blue-700 rounded-2xl px-3 py-1.5 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">my_location</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+<!-- FAB Suppression Rule: FAB is suppressed on list/selection views per guidelines -->
+</body></html>

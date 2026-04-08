@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FixitNow | Expert Electricians</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#6f5900",
+                        "primary": "#004ac6",
+                        "surface": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "secondary": "#735c00",
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#ffe083",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-container": "#fed01b",
+                        "on-tertiary-container": "#ffede6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "tertiary-container": "#bc4800",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b4c5ff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-surface": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-container": "#eeefff",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#eec200",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00174b",
+                        "outline": "#737686",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed": "#231b00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-surface-variant": "#434655",
+                        "outline-variant": "#c3c6d7",
+                        "tertiary": "#943700",
+                        "primary-container": "#2563eb",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-fixed": "#ffdbcd",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-tint": "#0053db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600">location_on</span>
+<div class="flex flex-col">
+<span class="text-xl font-black text-slate-900 tracking-tight">FixitNow</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-blue-600 font-semibold transition-colors" href="#">Home</a>
+<a class="text-slate-500 hover:bg-slate-100 px-3 py-1 rounded-lg transition-colors" href="#">Bookings</a>
+<a class="text-slate-500 hover:bg-slate-100 px-3 py-1 rounded-lg transition-colors" href="#">Track</a>
+<a class="text-slate-500 hover:bg-slate-100 px-3 py-1 rounded-lg transition-colors" href="#">Wallet</a>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a professional male user with a friendly expression and neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABdxlTTt3tBxy4bEFpxXNdSC_wCkGl2aze9uD4Fo-XKJVKm9aasz0G0yP8aInWDKgmTohkS1j5vtTkPduakp2ukHhisTWPQDIlDG7K0XuptBioOg3l58-ILiCROz6sbnxcI2Yx7Jw2UV0niwyVW0lldd6Cxbjk3P_ri17D35B1IwOwJ3f_D1GogTvVhOO6P0cghS5t1yYPkQjN4qnDSZrRAkDL9-5nw_SCW6-M5eKcDPedcPMbKmp0meB5iDlFHKaMtoGySbIaNpn0"/>
+</div>
+</div>
+<div class="md:hidden w-8 h-8 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdEyozFK0HbAkmPn0RsDWzG9MrI5CZeMwqhwc4DBNt8JgbteNBNYh7eTLBJm2Hb2_paCCOc1ekWd8B8AV187pwH0BkX8RAjUBrL29bv-w0oMWIfMJ1PTgXAq55lcxfvEJAc9TVWTj-zm5pECQlFiyi0v_PNEwztVnRkeiPExzgEMbRql120O0OrrJxoTyou7JeButPIhQxScYIWvL7jBpJ2tgsJViLK7xH5zqvI3qDd5K5gYzGR4pKq0zio2U7Vp_iP84cIqAK_RBT"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Banner Section -->
+<section class="relative w-full h-[400px] rounded-xl overflow-hidden mb-12 bg-primary">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Professional electrician in a blue uniform inspecting a modern circuit breaker panel with precise tools and bright workspace lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvH4jiVNOV7UCCiXeXIZ-jtRkX__v9CD0IIziQ_b_4LByKnxub2CmE105DB567MUDP1f1aolJezePgu-34xes2ylvFYMUmdKh4sRfVsPEvHFp7q5KERyXRvwASYJERkV-01SGjOL_IWmxXSYnfVqvXGJdFSFJYeJwwfZpUKpoS8AzD_jpLADzfsjIjePal8-PBkgT__2wZtp-0k8xG_-hj4HKe99QHkwPXwMorPQeEzYy904zNsbGtGHntqV58hAXcT66HaRTc0saW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 w-full max-w-2xl">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    Expert Electricians
+                </div>
+<h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Professional Electrical Repairs &amp; Installations</h1>
+<p class="text-white/80 text-lg max-w-lg">Certified experts arriving at your doorstep in under 45 minutes for all your electrical emergencies.</p>
+</div>
+</section>
+<!-- Search & Filter Bar -->
+<div class="flex flex-col md:flex-row gap-4 mb-12">
+<div class="flex-1 relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">search</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low rounded-xl border-none focus:ring-2 focus:ring-primary/30 focus:bg-surface-container-lowest transition-all" placeholder="Search for electrical issues..." type="text"/>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+<button class="whitespace-nowrap px-6 py-4 bg-surface-container-lowest rounded-xl font-semibold hover:bg-slate-100 transition-all">Most Popular</button>
+<button class="whitespace-nowrap px-6 py-4 bg-surface-container-lowest rounded-xl font-semibold hover:bg-slate-100 transition-all">Emergency</button>
+<button class="whitespace-nowrap px-6 py-4 bg-surface-container-lowest rounded-xl font-semibold hover:bg-slate-100 transition-all">Repairs</button>
+<button class="whitespace-nowrap px-6 py-4 bg-surface-container-lowest rounded-xl font-semibold hover:bg-slate-100 transition-all">Fittings</button>
+</div>
+</div>
+<!-- Common Issues Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Issue Card 1: Switch Repair -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern minimalist light switch plate on a clean white wall with soft natural lighting and elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVGobqqWf_iJ_9syVKrWb4nndqAolTWRat-qC9PAgRpiocWHe4i6E2nji8J19pLN1pjPV_ZzNYnNy2wj8KOWHoFdw7bUSbo3BtLhprjbTAwwR_ALUKj9Upl6gNFBoqbSRuudNI1FLT4qRSXwQ40VvjdjmqnIApbKRW7WF9H9PBS5wUjay0np2yJzWlqJX8k5UaREKRmj3O-gZwQYxWp0p4cwHPMSmtQz7iMyN_4T_ESbJ9bPlFP_yzANYfaHUAhA_2lBm522PCa6ow"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                        Quick Fix
+                    </div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Switch &amp; Socket Repair</h3>
+<span class="text-primary font-bold text-lg">$19.99</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Fix loose connections, sparks, or non-functional wall switches and sockets.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>ETA: 35 mins</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Issue Card 2: Fan Installation -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern ceiling fan rotating in a stylish contemporary living room with minimalist interior design and airy atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8aY6e8RmeXO1AGMRSoA4GH3fT7C32UNF8GeKlOoNZXk9WwB6D9V5zpEpYB3KEgdKHkRF-SKza7BcUAgmbiMTTD-PKOXvYchMfROGjX9DqTTALoXbsGclP8-HOpjrbqprk-izDVN1Ay28nFI67-5OEuY8CiA1XmjUA7SgWdqTlAU1MUPXH7mNtY1SlE795Ay4uWctVE7s_dEX1lQaz0mPni-g-DJy3C5-kFNWPZewGup0UisEWlMJ3LIx549cypScD_Eovhj5TQIxp"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Fan Installation</h3>
+<span class="text-primary font-bold text-lg">$45.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Expert mounting and wiring for ceiling, pedestal, or wall-mounted fans.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>ETA: 45 mins</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Issue Card 3: MCB Replacement -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up of a residential electrical panel showing circuit breakers with detailed focus and technical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy7XS2luomnq_hQ13AnF3FCwDgr5FxO3kAflWmIxwFRFXJonEw-HMAeEp8HRnqQ0_72JxRX-T-yVAkDaBhBXcNXP2q4GNhVxAjisJX24CTXhIcXVnf_KSx_-X2DYgqbXKxKKPqJHMg5GxA7l9GNX7H3P7_ZqNp3lvfd_Wc9dDmirc1d_cv1N2uChntiQMxxZsJSy1ysXuDQAq1jXNprhCxOm1k_RmuDZGeUmTC63LK3BhuaZlgruvOGw9zRVb5tVdL8pjs2UhS96VF"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                        Urgent
+                    </div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">MCB Trip Issues</h3>
+<span class="text-primary font-bold text-lg">$29.50</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Diagnosing frequent tripping and replacing faulty circuit breakers.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>ETA: 25 mins</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Issue Card 4: Lighting -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant warm decorative lighting in a modern interior setting with soft glow and bokeh background effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClU2TL4nQasGKonr8oHjt8kZWdjvGCSZGxNOGQH-AvrPAPTbRccs6wpWRvhdm2d7AEwP7ralgwuvXCXnNvRujWGV7wf_A3EhzhszkvhGXI_Ss3sO9UYQhUViXuZlfSF92QUYOyJVLMI6bTkFvYXO0XPiYvTbZtCsLx8bd3R7w2tN0s9Hi-GmoKQTiouP9R9EiT2XHd6njSGHttoxfWQbXcc8qNhAIaAsw8LCtVqN9He8ToJM4r_Vh1PHmAFMj699uscqh0jJaqek6Q"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Lights &amp; Chandeliers</h3>
+<span class="text-primary font-bold text-lg">$35.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Installation of LED strips, decorative lights, and heavy chandeliers.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>ETA: 50 mins</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Issue Card 5: Inverter Service -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Technical professional working on an industrial power inverter with complex wiring and specialized equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCndatGUdOc1ph4-dLyPaCOAXOEpzYu2u2WM5dsbWq4LE1U8VB2cNaDLo6ISgPmAeU6dwawiGTM-qnrDepIdGZsz0viMEey2loOIZdPjUY8_k9tTONbs-rQrV68hur_JFyYEjLQ10C3YavboSFB03aolBZIJqNTd01DRduP6WTKYfSmdM8xcFKL8HnOZlDXSQqVet7F1sYvhs70-jCxBNksa-86a9LrosRLN4sRybBIv0FqekhTiyNRHVLj9sTTd65m2j-vGhF3YXYO"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Inverter &amp; Battery</h3>
+<span class="text-primary font-bold text-lg">$59.00</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Comprehensive service and repair for power backup systems.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>ETA: 60 mins</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Issue Card 6: Full Wiring -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Organized colorful electrical wires neatly arranged in a cable management tray for a professional network installation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTcQs_DNHGanL-GMjObtkjxTjspbty7k0EcasEbQsDDmhiPB3gDlnHJTxU9hwYQHmwy1BFCzC5oROcoQZs7l2gtcQlk4qtELTlMULxwbxe_mDC-gu3JXascG2oRKvg4z1g8jaHc8Myq23sgFakQohXOdSXzWHqyfI91PfR_8kjwqJtoQsHrefVFOtI0W4QjJ2quUxZJFQ6GaS1o4fZrgXMQ-xEBf_2cm6gYiYvWn4tELVCn8NpQEHmWo6wNDIGTdQFvhiA6_Sg3mpj"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-on-surface">Home Re-wiring</h3>
+<span class="text-primary font-bold text-lg">$149+</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Full checkup and rewiring services for safety and efficiency upgrades.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-semibold text-xs">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Consultation</span>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm shadow-md active:scale-95 transition-all">Get Quote</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Premium Upsell Banner -->
+<div class="mt-16 bg-surface-container-high rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex-1">
+<div class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider mb-4">FixitNow Gold</div>
+<h2 class="text-3xl font-extrabold text-on-surface mb-2">Get 20% off all Electrical Services</h2>
+<p class="text-on-surface-variant leading-relaxed">Join Gold membership and enjoy priority scheduling, zero visiting charges, and exclusive discounts for just $9/month.</p>
+</div>
+<button class="bg-on-surface text-surface-container-lowest px-10 py-5 rounded-xl font-bold shadow-xl active:scale-95 transition-all whitespace-nowrap">Join Gold Now</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-center px-4 pb-2 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-t-3xl z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:hidden">
+<div class="flex flex-col items-center justify-center bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-2xl px-3 py-1.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Bookings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">my_location</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Wallet</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">person</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Profile</span>
+</div>
+</nav>
+</body></html>

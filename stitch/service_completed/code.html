@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Service Completed - FixitNow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#6f5900",
+                        "primary": "#004ac6",
+                        "surface": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "secondary": "#735c00",
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#ffe083",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-container": "#fed01b",
+                        "on-tertiary-container": "#ffede6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "tertiary-container": "#bc4800",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b4c5ff",
+                        "surface-dim": "#d8dadc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-surface": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-container": "#eeefff",
+                        "primary-fixed": "#dbe1ff",
+                        "secondary-fixed-dim": "#eec200",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#00174b",
+                        "outline": "#737686",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed": "#231b00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-surface-variant": "#434655",
+                        "outline-variant": "#c3c6d7",
+                        "tertiary": "#943700",
+                        "primary-container": "#2563eb",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-fixed": "#ffdbcd",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-tint": "#0053db"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-600">check_circle</span>
+<span class="text-xl font-black text-slate-900 tracking-tight">FixitNow</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling professional man in a clean work uniform with a soft bokeh office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhQiPNGK4yF6PyCX4Qw_B6H_a5LTnNst3dW5NgU8XXq4yfFzN2xUF7slF6VJLzI7BYsem_2Kc5o0ogOJtCy1GcjJVUGZtwDHtWLioeZ4hf5fu960N8PvavbkaIKZQQbJ7M8efJCsVtcTF5g9wbHMXUjcTIMYmTAYelLewfPMXWcyiOhCpN6tNu1O22csJvhPSUx9N22jycBgdpbpBKHC5L_0IfLouWGUz3S5oKsO3_kjsJe54Koino1FBA8ivBeJMujUpoDzMD8ynl"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto min-h-screen flex flex-col justify-center items-center text-center">
+<!-- Success Animation / Hero Section -->
+<div class="relative mb-12">
+<div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl scale-150"></div>
+<div class="relative w-32 h-32 bg-primary-container rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-500">
+<span class="material-symbols-outlined text-white text-6xl" style="font-variation-settings: 'wght' 700;">done_all</span>
+</div>
+</div>
+<div class="space-y-4 mb-12">
+<h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface">Service Completed Successfully</h1>
+<p class="text-on-surface-variant font-body max-w-sm mx-auto leading-relaxed">
+                Your emergency plumbing repair has been finalized. Everything is back in working order and your pro has signed off.
+            </p>
+</div>
+<!-- Action Cards: Bento-lite style -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-12">
+<!-- Invoice Download -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col items-start text-left transition-all hover:bg-white hover:shadow-xl group">
+<div class="w-12 h-12 bg-surface-container rounded-xl flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<h3 class="font-headline font-bold text-lg mb-1">Service Invoice</h3>
+<p class="text-sm text-on-surface-variant mb-6">Order #FX-92048 • $240.00</p>
+<button class="mt-auto flex items-center gap-2 text-primary font-semibold text-sm hover:underline">
+<span class="material-symbols-outlined text-base">download</span>
+                    Download PDF
+                </button>
+</div>
+<!-- Pro Profile Mini -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col items-start text-left transition-all hover:bg-white hover:shadow-xl group">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-xl overflow-hidden">
+<img alt="Technician" class="w-full h-full object-cover" data-alt="Skilled service professional in a blue work shirt holding a wrench with a confident and helpful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaUywkqHEs5Mqhmg9O1iGTqwnJOfexRyOsBjmOmh6TvR02iNaceydhWJiUYV2P2WM77Y1lx7KvbmkjcgRETbz5T_HfBO6Vjqh7CEp8YAeAl7f4whejrrEevxiZ6OD5Pc_A1D3J4VMw-5dMBOhF24B_ktb-ETvSuv6ZmXYmkFRRXWQDVv1BwYSAS9oGqrPJCDNIfYI7luuy2EAbExVAZVyxqFFN7pCUnb_54-ueqVSQMxWUV7OKnNkIBUPtmjVvtXC2vn0FwtHfcJ0P"/>
+</div>
+<div>
+<p class="text-xs uppercase font-label tracking-wider text-on-surface-variant">Your Technician</p>
+<h3 class="font-headline font-bold text-base">Marco Rossi</h3>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant mb-6">"Pipes are clear and reinforced. Happy to help!"</p>
+<div class="mt-auto flex items-center text-secondary font-bold text-sm">
+<span class="material-symbols-outlined text-base mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.9 Rated Pro
+                </div>
+</div>
+</div>
+<!-- Rating Section (Primary CTA) -->
+<div class="w-full bg-surface-container-low rounded-[2rem] p-8 mb-8 border border-white/40">
+<h2 class="font-headline font-bold text-xl mb-2">Rate your experience</h2>
+<p class="text-on-surface-variant text-sm mb-8">How was the repair service today?</p>
+<div class="flex justify-center gap-2 mb-10">
+<button class="w-12 h-12 flex items-center justify-center text-outline-variant hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center text-outline-variant hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center text-outline-variant hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center text-outline-variant hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center text-outline-variant hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<button class="w-full py-4 px-8 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-xl text-lg shadow-lg active:scale-95 transition-all">
+                Submit Rating
+            </button>
+</div>
+<button class="text-on-surface-variant font-semibold text-sm hover:text-primary transition-colors">
+            Back to Dashboard
+        </button>
+</main>
+<!-- BottomNavBar (Hidden on desktop via design system logic, but mapped for mobile context) -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex justify-around items-center px-4 pb-2 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:hidden">
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-50 text-blue-700 rounded-2xl px-3 py-1.5 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">my_location</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

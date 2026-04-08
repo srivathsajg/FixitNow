@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#004ac6",
+                    "surface": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "secondary": "#735c00",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#ffe083",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-container": "#fed01b",
+                    "on-tertiary-container": "#ffede6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#bc4800",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-dim": "#d8dadc",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-surface": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary-container": "#eeefff",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed-dim": "#eec200",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#00174b",
+                    "outline": "#737686",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-surface-variant": "#434655",
+                    "outline-variant": "#c3c6d7",
+                    "tertiary": "#943700",
+                    "primary-container": "#2563eb",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-fixed": "#ffdbcd",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-tint": "#0053db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col items-center justify-center overflow-hidden">
+<!-- Navigation suppression: This is an onboarding screen, so no TopAppBar or BottomNavBar as per the 'Shell Visibility & Relevance' rule. -->
+<main class="relative w-full max-w-md h-screen flex flex-col bg-surface-container-lowest overflow-hidden">
+<!-- Header Actions -->
+<header class="flex justify-end p-6 z-10">
+<button class="text-on-surface-variant font-semibold text-sm px-4 py-2 hover:bg-surface-container-low rounded-xl transition-colors">
+                Skip
+            </button>
+</header>
+<!-- Illustration Canvas -->
+<div class="relative flex-grow flex items-center justify-center px-8">
+<div class="relative w-full aspect-square max-w-[320px]">
+<!-- Editorial Overlapping Elements -->
+<div class="absolute -top-4 -left-4 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -right-4 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<!-- Main Image Container with Asymmetric Border Radius -->
+<div class="relative z-10 w-full h-full overflow-hidden rounded-[3rem] shadow-2xl shadow-primary/10">
+<img class="w-full h-full object-cover" data-alt="Professional electrician in clean uniform fixing a modern wall panel with soft cinematic lighting and premium domestic interior background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuOCfMjNYgMOI_Ca_ieUSQbiT41YnfaPcjeVReuoljmFnfVEvfE_tBS1DJIWX_W73nHewgA7fIrwdQ6cJNhNNsCq0ymdFKM55qlRbi23BObVMLoYPm0w_EeofVHZY1DAZ-WxVJP6qmXtBiiHkx5GxLhNUODGZHJ6X3UbDbwsUr9yW8LEP8X5niKT5Oa393fHlAjnjw8jil_qG9WiWwFirByOTCsydnDqDiyV8HEawNIua5eDjFSiXt5DiC5ICBUxsV1TsNfjjAqeoi"/>
+<!-- Floating Detail Card (Digital Concierge Pattern) -->
+<div class="absolute bottom-4 left-4 right-4 bg-white/80 backdrop-blur-md p-4 rounded-xl flex items-center gap-4">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-primary uppercase tracking-[0.1em] font-label">Verified Pro</p>
+<p class="text-xs font-bold text-on-surface">Arriving in 15 mins</p>
+</div>
+</div>
+</div>
+<!-- Floating Emergency Chip -->
+<div class="absolute -top-6 right-0 z-20 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full shadow-lg shadow-tertiary/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="bolt">bolt</span>
+<span class="text-[10px] font-bold uppercase tracking-wider font-label">Instant Booking</span>
+</div>
+</div>
+</div>
+<!-- Content Section -->
+<div class="bg-surface p-10 pb-16 rounded-t-[3rem] shadow-[0_-20px_40px_rgba(0,0,0,0.02)] flex flex-col items-center text-center">
+<!-- Headlines (Editorial Voice) -->
+<h1 class="text-3xl font-extrabold text-on-surface tracking-tight leading-tight mb-4">
+                Book trusted home services instantly
+            </h1>
+<p class="text-on-surface-variant text-base leading-relaxed max-w-[280px]">
+                Electrician, plumber, AC repair and more in 15–30 minutes
+            </p>
+<!-- Pagination Dots -->
+<div class="flex gap-2.5 my-10">
+<span class="w-8 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<!-- CTA Section -->
+<div class="w-full">
+<button class="w-full py-5 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    Next
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Visual Polish: Subtle Background Noise/Grain Overlay (Simulated via Tonal Layering) -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply bg-[radial-gradient(#004ac6_0.5px,transparent_0.5px)] [background-size:16px_16px]"></div>
+</body></html>

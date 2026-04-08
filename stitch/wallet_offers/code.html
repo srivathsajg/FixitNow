@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#6f5900",
+                    "primary": "#004ac6",
+                    "surface": "#f7f9fb",
+                    "error-container": "#ffdad6",
+                    "secondary": "#735c00",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#ffe083",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-container": "#fed01b",
+                    "on-tertiary-container": "#ffede6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "background": "#f7f9fb",
+                    "tertiary-container": "#bc4800",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-dim": "#d8dadc",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-surface": "#191c1e",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary-container": "#eeefff",
+                    "primary-fixed": "#dbe1ff",
+                    "secondary-fixed-dim": "#eec200",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e0e3e5",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#00174b",
+                    "outline": "#737686",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary-fixed": "#231b00",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-surface-variant": "#434655",
+                    "outline-variant": "#c3c6d7",
+                    "tertiary": "#943700",
+                    "primary-container": "#2563eb",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-fixed": "#ffdbcd",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-tint": "#0053db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400">location_on</span>
+<span class="text-xl font-black text-slate-900 dark:text-white tracking-tight font-headline">FixitNow</span>
+</div>
+<div class="h-10 w-10 rounded-full bg-surface-container overflow-hidden border-2 border-primary/10">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional man with a friendly smile, clean lighting, soft background focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEcEe1ab9C9nlvRdoUwz2vNkARouns5UvF6mz5s8MxraHXyY8rSw6zF0k1CtqOHL86oRkYpdlK8-HuWQAN9gssIGWB0bEO0gCeF_mROMz7XXxhXaDBN7MQdleXSXE7BvedJo12Dna04t8HOITwZ79Xh5FQi104I_yewlfNFOaKz44rojPnbfi0mHEGbDWqudWm3z6AEkKpFl4-Kng_d_k5JUyV_8ZOr53rN5Mk6zw6CHCXI7CH9HIOOKYAjZLu1ZSE4txbTV1XvU-r"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Wallet Balance Card (Bento Style) -->
+<section class="relative overflow-hidden bg-primary-container rounded-xl p-8 text-white shadow-xl shadow-primary/20">
+<div class="relative z-10">
+<p class="text-white/80 font-label text-xs uppercase tracking-widest mb-1">Total Balance</p>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-extrabold font-headline">$1,240.50</span>
+</div>
+<div class="mt-8 flex gap-4">
+<button class="bg-white text-primary px-6 py-2.5 rounded-full font-bold text-sm flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+                        Add Funds
+                    </button>
+<button class="bg-white/20 backdrop-blur-md text-white px-6 py-2.5 rounded-full font-bold text-sm flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg">history</span>
+                        History
+                    </button>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute -left-12 -bottom-12 w-48 h-48 bg-primary/20 rounded-full blur-3xl"></div>
+</section>
+<!-- Premium Membership Card (High Contrast) -->
+<section class="bg-inverse-surface rounded-xl p-6 relative flex items-center gap-6 overflow-hidden">
+<div class="flex-1 z-10">
+<div class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded text-[10px] font-bold uppercase w-fit mb-3">Premium Member</div>
+<h3 class="text-white font-headline font-bold text-lg leading-tight">Fixit Gold Status</h3>
+<p class="text-white/60 text-sm mt-1">Free inspections &amp; 20% off all parts</p>
+</div>
+<div class="z-10">
+<span class="material-symbols-outlined text-secondary-container text-5xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-white/5 to-transparent"></div>
+</section>
+<!-- Promo Coupons Carousel -->
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="font-headline font-bold text-xl">Active Offers</h2>
+<button class="text-primary font-bold text-sm">See all</button>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar -mx-6 px-6">
+<!-- Coupon 1 -->
+<div class="min-w-[280px] bg-surface-container-lowest p-5 rounded-xl border-l-4 border-primary shadow-sm flex flex-col justify-between h-40">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg leading-tight">AC Service Special</h4>
+<span class="text-primary font-black text-2xl">30% OFF</span>
+</div>
+<p class="text-on-surface-variant text-xs mt-1">Valid until Oct 24, 2023</p>
+</div>
+<div class="flex justify-between items-center bg-surface-container-low p-2 rounded-lg">
+<span class="text-[10px] font-mono text-outline uppercase tracking-wider">COOLSUMMER30</span>
+<button class="text-primary font-bold text-xs">Copy Code</button>
+</div>
+</div>
+<!-- Coupon 2 -->
+<div class="min-w-[280px] bg-surface-container-lowest p-5 rounded-xl border-l-4 border-tertiary shadow-sm flex flex-col justify-between h-40">
+<div>
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-lg leading-tight">Plumbing Bundle</h4>
+<span class="text-tertiary font-black text-2xl">$50 OFF</span>
+</div>
+<p class="text-on-surface-variant text-xs mt-1">On orders above $200</p>
+</div>
+<div class="flex justify-between items-center bg-surface-container-low p-2 rounded-lg">
+<span class="text-[10px] font-mono text-outline uppercase tracking-wider">PIPEFIX50</span>
+<button class="text-primary font-bold text-xs">Copy Code</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Referral Reward Card (Asymmetric Layout) -->
+<section class="grid grid-cols-12 gap-4">
+<div class="col-span-12 bg-white rounded-xl overflow-hidden flex shadow-sm">
+<div class="w-1/3 h-full min-h-[160px] relative">
+<img alt="Referral Illustration" class="w-full h-full object-cover" data-alt="cheerful group of friends laughing and sharing a mobile phone screen in a bright modern apartment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLeQ6rbEywB0qjW515nGPkmeuAidV87m43mdSzQeuRgqMzR6mVkou9qxXkOsaXBRR49j3FEB_sSfhKTBhg2z71FRoK3U3rHeafksE0BbPIqpT61SVrOeW4VwH8CYvrFWbImqYmOKHI7dTtpCC2rXb5dUeWatQiDiw1IWsRd3FEDMkfNuNlTmKExCm0060fcqO4Beq5jiswwRGosvWoaJi3XpvPOa2JdOgYfezqxpm0nVW-gyR22hHRKRAchdo_9-C8SGxJ6y-5TOE8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent to-white"></div>
+</div>
+<div class="w-2/3 p-6 flex flex-col justify-center">
+<h3 class="font-headline font-bold text-lg leading-tight">Invite &amp; Earn $25</h3>
+<p class="text-on-surface-variant text-sm mt-1">Get credits for every friend who books their first service.</p>
+<button class="mt-4 bg-surface-container-highest text-on-surface font-bold text-sm py-2 px-4 rounded-full w-fit hover:bg-slate-200 transition-colors">
+                        Share Link
+                    </button>
+</div>
+</div>
+</section>
+<!-- Recent Transactions -->
+<section class="pb-10">
+<h2 class="font-headline font-bold text-xl mb-4">Quick Actions</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<span class="font-semibold text-sm">Pay Bill</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="h-10 w-10 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">card_giftcard</span>
+</div>
+<span class="font-semibold text-sm">Buy Voucher</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex justify-around items-center px-4 pb-2 z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">home</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Bookings</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">my_location</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-2xl px-3 py-1.5 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Wallet</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-3 py-1.5 hover:text-blue-500 transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined">person</span>
+<span class="font-inter text-[10px] font-bold uppercase tracking-wider mt-1">Profile</span>
+</div>
+</nav>
+</body></html>
